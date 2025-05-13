@@ -1,0 +1,128 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% Set applicant's personal data for header
+\name{Carlos Melo}
+\address{Cape Coral, FL \linebreak United States}
+\contacts{+1 (713) 885-6436 \linebreak carlos@sigmoidal.ai \linebreak https://sigmoidal.ai/en}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Machine Learning Engineer}{Sigmoidal}{2020 -- Ongoing}
+			\begin{itemize}
+				\item Built an automated diagnostic system for 12-lead ECGs using a deep neural network on AWS SageMaker, processing 345K exams (17B+ data points) and achieving more than 98\% specificity.
+				\item Built an ETL workflow to integrate multi-channel data, powering customer journey analytics and lead scoring with a LightGBM model, boosting conversion rates by 20\%.
+				\item Founded and scaled a business to >R\$1M/year in revenue, serving 6,000+ students.
+				\item Designed and coordinated two accredited graduate programs in Data Science and Computer Vision.
+				\item Built content platform with 130 technical articles and 400 hours of video, attracting 3M visitors.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Satellite Mission Engineer}{Space Operations Centre}{2018 -- 2020}			
+			\begin{itemize}
+				\item Led the Remote Sensing Department, overseeing a technical team of 10+ staff and officers.
+				\item Developed a computer vision model to identify and track oil spill expansion during Brazil's 2019 ecological crisis.
+				\item Built Brazil’s first SAR satellite image downlink and processing pipeline, enabling surveillance over 225,000+ km² of the Amazon rainforest.
+				\item Developed ML-based geospatial models to optimize military resources, and crew scheduling during "Operation Acolhida" (Venezuelan refugee crisis), supporting 100,000+ refugees.
+				\item Created a real-time drone surveillance system using a custom YOLOv5 model, achieving >90\% accuracy in field tests.
+				\item Developed a metaheuristic algorithm to optimize EROS-B satellite scheduling, increasing target collection by 35\% per pass.
+				\item Fused satellite imagery using ArcGIS Pro and TensorFlow to detect illegal airstrips.
+				\item Served as liaison for the Brazilian Air Force’s largest C4ISR program, defining operational requirements for EMBRAER and integrating data-driven analytics into Air Task Orders.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Machine Learning Researcher}{Institute for Advanced Studies}{2016 -- 2018}		
+			\begin{itemize}
+				\item Integrated radar and sensor data into strategic operations planning for intercepting low-flying illicit aircraft.
+				\item Developed a mission planning plugin for a GIS-based defense platform, using a hybrid genetic algorithm implemented in Python and C++ to optimize satellite image acquisition schedules.
+				\item Published first-author article on applying System Dynamics to Air Force Effects-Based Operations planning at a leading Latin American defense conference.
+				\item Published a first-author article on satellite imaging scheduling in a premier Brazilian Air Force journal, presenting a hybrid genetic algorithm to optimize satellite task scheduling.
+				\item Conducted applied research in C4ISR systems, designing AI-driven pipelines that integrated computer vision and geospatial data for aerospace mission support.
+				\item Introduced System Dynamics modeling for effects-based operations planning; methodology later adopted by the Brazilian Aerospace Command for mission simulations.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Military Pilot}{Brazilian Air Force}{2004 -- 2016}
+			\begin{itemize}
+				\item Accumulated over 1,000 flight hours, executing diverse military missions.
+				\item Served 4 years as a military instructor for the Cadet Corps and as a flight instructor on T-25 Universal, T-27 Tucano, and AS-350 Esquilo aircraft.
+				\item Directed the IT department at the 1st/8th GAV SAR Squadron, reducing workflow delays by 50\% through Python-based automation.
+				\item Completed advanced operational training programs, including Jungle Survival, Sea Survival, and Combat Search and Rescue courses.
+				\item Led the migration of a military airbase’s IT infrastructure from Windows to Linux and advised on secure network architecture.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Brazil}{\protect\parbox{2.6in}{Aeronautics Institute of Technology}}{2016 -- 2018}
+			\begin{itemize}
+				\item MSC in Aerospace Engineering
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Brazil}{Air Force University}{2019}
+			\begin{itemize}
+				\item MBA in Project Management
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Brazil}{Air Force Academy}{2004 -- 2007}
+			\begin{itemize}
+				\item BS in Aeronautical Science
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+
+		
+	
+	\begin{cvsection}{Advisory Roles \& Awards}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{U.S. Green Card, EB1A Visa:} Granted for individuals of extraordinary ability.
+				\item \textbf{Chair, Innovation Committee} (2023 -- 2024). International Association of Artificial Intelligence (I2AI), Brazil's foremost AI-focused international association.
+				\item \textbf{Order of the Sword:} Distinguished honor conferred by the Air Force Cadet Corps in recognition of exemplary conduct.
+				\item \textbf{Bronze Military Medal:} Recognized for a decade of exceptional performance, unwavering dedication, and skillful execution.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item Python; Machine Learning; TensorFlow; PyTorch; OpenCV; C++; R; Optimization; Operations Research
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
